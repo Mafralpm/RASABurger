@@ -1,0 +1,67 @@
+version: "2.0"
+
+stories:
+
+- story: caminho feliz
+  steps:
+  - action: utter_saudacao
+  - intent: pedir_hamburguer
+  - action: utter_pedir_hamburguer
+  - intent: combos
+  - action: utter_combos
+
+- story: caminho feliz2
+  steps:
+  - action: utter_saudacao
+  - intent: combos
+  - action: utter_combos
+
+- story: caminho feliz3
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: pedir_hamburguer
+  - action: utter_pedir_hamburguer
+
+
+
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: combos
+  - action: utter_combos
+  - intent: pedir_hamburguer
+    entities:
+    - saboresHamburguer: mafrashow
+  - slot_was_set:
+    - saboresHamburguer: mafrashow
+  - action: utter_escolheu_hamburguer
+  - action: utter_escolheu_hamburguer
+  - action: utter_tchau

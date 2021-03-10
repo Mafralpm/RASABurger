@@ -1,0 +1,35 @@
+version: "2.0"
+nlu:
+- intent: saudacao
+  examples: |
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - e ai, beleza?
+    - tudo bem?
+    - opa e ai?
+- intent: pedir_hamburguer
+  examples: |
+    - Queria pedir um hamburguer
+    - quero hamburguer
+    - tem hamburguer de que?
+    - quais as opções de burger"?
+    - Boa noite, vou querer um [mafrashow](saboresHamburguer)!
+    - Boa noite, vou querer um [só o piteu](saboresHamburguer)!
+    - Boa noite, vou querer um [desenrolado feito menino novo](saboresHamburguer)!
+- intent: combos
+  examples: |
+    - quais os combos?
+    - tem algum combo?
+    - tem combo com que?
+    - o que vem no combo?
+    - Tem algum desconto?
+- intent: tchau
+  examples: |
+    - Só isso, obrigado
+    - Pode fechar
+    - valeu, flw
+    - só isso mesmo
+    - é isso, obrigado
+    - pode fechar isso mesmo
