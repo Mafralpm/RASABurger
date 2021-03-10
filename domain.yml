@@ -1,0 +1,29 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- combos
+- pedir_hamburguer
+- saudacao
+- tchau
+entities:
+- saboresHamburguer
+slots:
+  saboresHamburguer:
+    type: text
+responses:
+  utter_escolheu_hamburguer:
+  - text: "Então você vai querer o {saboresHamburguer} ! Que bom!"
+  utter_saudacao:
+  - text: Por aqui está tudo otimo! E com você? Vai um buguer para alavancar o dia?!
+  utter_pedir_hamburguer:
+  - text: "Hoje temos os saudosos: \n mafrashow \n só o piteu \n desenrolado feito menino novo"
+  utter_combos:
+  - text: "Os combos que temos: \n COMBO 1: mafrashow, batata e refri! \n COMBO 2: só o piteu, batata e refri! \n COMBO 3: desenrolado feito menino novo, batata e refri! "
+  utter_tchau:
+  - text: Agradecemos muito seu contato! Ate a proxima
+actions:
+- utter_combos
+- utter_escolheu_hamburguer
+- utter_tchau
+version: '2.0'
