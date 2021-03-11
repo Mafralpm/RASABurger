@@ -1,0 +1,31 @@
+START
+U -> Olá poderia me mandar o cardápio?
+C -> Olá boa noite! Bem vindo ao RASABurger. [Enviou o cardápio]
+U -> Eu vou querer um Mafrashow
+C -> O Mafrashow é uma exelente pedida. Para confirmar seu pedido preciso que informe a o endereço
+U -> Rua marcelo reis, numero 112
+C -> Para o endereço Rua Marcelo Reis, 112 o frete fica de graça (uhuul!!) tudo bem?
+U -> Tudo bem. Em quanto tempo chega?
+C -> Seu pedido foi confirmado e deve chegar em uns 40 minutos
+END
+
+START
+U -> Boa noite, gostaria de pedir um combo do mafrashow!
+C -> Olá, boa noite Bem vindo ao RASABurger
+C -> O combo do mafrashow possui batata e latinha de refri. Qual seu refri (coca, guarana ou fanta uva)?
+U ->  Coca cola
+C -> O Mafrashow é uma exelente pedida. Para confirmar seu pedido preciso que informe a o endereço
+U -> Rua marcelo reis, 112
+C -> Para o endereço Rua Marcelo Reis, 112 o frete fica de graça (uhuul!!) tudo bem?
+U -> Tudo bem. Muito obrigado
+C -> Seu pedido foi confirmado e deve chegar em uns 40 minutos
+END
+
+START
+U -> Olá, gostária de pedir um mafrashow, para o endereço rua marcelo reis, 112
+C -> O MafraShow é uma exelente pedida.
+C -> Para o endereço Rua Marcelo Reis, 112 o frete fica de graça (uhuul!!) tudo bem?
+U -> Tudo bem. Muito obrigado
+C -> Seu pedido foi confirmado e deve chegar em uns 40 minutos
+END
+

@@ -9,27 +9,26 @@ nlu:
     - e ai, beleza?
     - tudo bem?
     - opa e ai?
-- intent: pedir_hamburguer
+    - Olá poderia me mandar o [cardápio](cardapio)?
+- intent: escolha_hamburguer
   examples: |
-    - Queria pedir um hamburguer
-    - quero hamburguer
-    - tem hamburguer de que?
-    - quais as opções de burger"?
-    - Boa noite, vou querer um [mafrashow](saboresHamburguer)!
-    - Boa noite, vou querer um [só o piteu](saboresHamburguer)!
-    - Boa noite, vou querer um [desenrolado feito menino novo](saboresHamburguer)!
-- intent: combos
+    - Eu vou querer um [Mafrashow](hamburguer)
+    - Eu vou querer um [Só o piteu](hamburguer)
+    - Eu vou querer um [desenrolado feito menino novo](hamburguer)
+    - Hoje eu vou querer um hamburguer [Mafrashow](hamburguer)
+    - Para hoje eu quero um [só o piteu](hamburguer)
+- intent: endereco
   examples: |
-    - quais os combos?
-    - tem algum combo?
-    - tem combo com que?
-    - o que vem no combo?
-    - Tem algum desconto?
-- intent: tchau
+    - minha rua é [Rua marcelo reis](rua_avenida), numero [112](numero_casa)
+    - [Rua marcelo reis](rua_avenida), numero [112](numero_casa)
+    - [Rua marcelo reis](rua_avenida) [112](numero_casa)
+    - meu endereço é [Rua marcelo reis](rua_avenida), numero [112](numero_casa)
+    - minha rua é [Rua marcelo reis](rua_avenida), no número [112](numero_casa)
+- intent: confirmar
   examples: |
-    - Só isso, obrigado
-    - Pode fechar
-    - valeu, flw
-    - só isso mesmo
-    - é isso, obrigado
-    - pode fechar isso mesmo
+    - tudo bem
+    - ok
+    - beleza
+    - tudo certo
+    - ok, muito obrigado
+    - agradeço a atenção

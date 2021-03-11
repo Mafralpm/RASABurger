@@ -2,28 +2,39 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- combos
-- pedir_hamburguer
 - saudacao
-- tchau
+- escolha_hamburguer
+- endereco
+- confirmar
 entities:
-- saboresHamburguer
+- cardapio
+- hamburguer
+- rua_avenida
+- numero_casa
 slots:
-  saboresHamburguer:
+  hamburguer:
+    type: text
+  cardapio:
+    type: bool
+  rua_avenida:
+    type: text
+  numero_casa:
     type: text
 responses:
-  utter_escolheu_hamburguer:
-  - text: "Então você vai querer o {saboresHamburguer} ! Que bom!"
+  utter_escolha_hamburguer:
+  - text: O {hamburguer} é uma exelente pedida. Para confirmar seu pedido preciso que informe a o endereço
+  utter_endereco:
+  - text: Para o endereco {rua_avenida}, {numero_casa} o frete fica de graça (uhuul!!) tudo bem?
+  utter_confirmacao:
+  - text: Seu pedido foi confirmado e deve chegar em uns 40 minutos
   utter_saudacao:
   - text: Por aqui está tudo otimo! E com você? Vai um buguer para alavancar o dia?!
-  utter_pedir_hamburguer:
-  - text: "Hoje temos os saudosos: \n mafrashow \n só o piteu \n desenrolado feito menino novo"
-  utter_combos:
-  - text: "Os combos que temos: \n COMBO 1: mafrashow, batata e refri! \n COMBO 2: só o piteu, batata e refri! \n COMBO 3: desenrolado feito menino novo, batata e refri! "
-  utter_tchau:
-  - text: Agradecemos muito seu contato! Ate a proxima
+  utter_acaba_conversa:
+  - text: Seu pedido foi confirmado e deve chegar em uns 40 minutos
 actions:
-- utter_combos
-- utter_escolheu_hamburguer
-- utter_tchau
+- utter_confirmacao
+- utter_endereco
+- utter_escolha_hamburguer
+- utter_saudacao
+- utter_acaba_conversa
 version: '2.0'

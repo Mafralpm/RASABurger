@@ -1,10 +1,10 @@
 version: "2.0"
 
 rules:
-- rule: Quando usuário disser tchau
-  steps:
-  - intent: tchau
-  - action: utter_tchau
+# - rule: Quando usuário disser tchau
+#   steps:
+#   - intent: tchau
+#   - action: utter_tchau
 
 
 # - rule: Say goodbye anytime the user says goodbye
